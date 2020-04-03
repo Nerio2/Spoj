@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Spoj.Classes;
+using System;
 
 namespace Spoj
 {
-	class Program
+	public class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			Console.WriteLine(Test.EndWith42());
 		}
 	}
 }

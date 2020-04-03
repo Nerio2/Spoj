@@ -1,14 +1,15 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Spoj.Classes;
+using System;
+using Xunit;
 
 namespace SpojTests
 {
-	[TestClass]
 	public class UnitTest1
 	{
-		[TestMethod]
-		public void TestMethod1()
+		[Fact]
+		public void EndWith42Test()
 		{
+			Assert.Equal("1 2 88", Test.EndWith42("1 2 88 42 99"));
 		}
 	}
 }
